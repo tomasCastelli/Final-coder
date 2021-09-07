@@ -140,6 +140,11 @@ body {
   background-image: url(../imagenes/cocinanueva.jpeg);
   background-position: center; }
 
+  .img5 {
+    grid-area: img4;
+    background-image: url(../imagenes/Guayaquil/cocina\ angulo.jpeg);
+    background-position: center; }
+
 @media only screen and (max-width: 768px) {
   .grid1 {
     grid-template-columns: repeat(3, 300px);
@@ -248,7 +253,7 @@ body {
             text-align: center;
             
         }
-        
+
         .iFooter{
             height: 30px;
             width: 30px;
