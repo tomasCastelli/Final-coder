@@ -1,0 +1,259 @@
+@charset "UTF-8";
+body {
+  background-color: black; }
+
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+
+.carousel{
+    width: 100%;
+    height: 500px;
+}
+
+.tituloProyecto{
+    text-align: center;
+    text-justify: auto;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.pProyecto{
+    font-size: 30px;
+    color: gray;
+
+}
+
+.imgcaro1{
+    background-image: url(../imagenes/Guayaquil/cocina\ angulo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgcaro2{
+    background-image: url(../imagenes/Guayaquil/cocinaReno.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgcaro3{
+    background-image: url(../imagenes/Guayaquil/antes\ y\ despues\ cocina.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgcaro4{
+    background-image: url(../imagenes/Country/comienzo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.imgcaro5{
+    background-image: url(../imagenes/Country/comienzo\ 2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.imgcaro6{
+    background-image: url(../imagenes/Country/angulo\ de\ calefaccion.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgcaro7{
+    background-image: url(../imagenes/Quincho/quincho\ cliente.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.imgcaro8{
+    background-image: url(../imagenes/Quincho/quincholuces.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.imgcaro9{
+    background-image: url(../imagenes/Quincho/quincho.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.alineacionCentral {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 70px; }
+
+.centroNegro {
+  text-align: center;
+  color: white; }
+
+
+.menu {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 30px; }
+
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(4, 150px);
+  gap: 5px;
+  justify-content: center;
+  grid-auto-flow: row;
+  grid-template-areas: 
+  "img1 img1 img2 logo" 
+  "img1 img1 img2 img3" 
+  "img5 img4 img4 img3" 
+  "img5 img4 img4 img3"; }
+
+.img1 {
+  grid-area: img1;
+  background-image: url(../imagenes/Quincho/quincho.jpeg);
+  background-position: center; }
+
+.logo {
+  grid-area: logo;
+  background-image: url(../imagenes/Presentacion/logojc.jpeg);
+  background-position: center;
+  background-size: cover; }
+
+.img5 {
+  grid-area: img5;
+  background-image: url(../imagenes/Guayaquil/cocinadespues.jpeg);
+  background-position: center; }
+
+.img2 {
+  grid-area: img2;
+  background-image: url(../imagenes/Quincho/quincholuces.jpeg);
+  background-position: center; }
+
+.img3 {
+  grid-area: img3;
+  background-image: url(../imagenes/edificio.jpeg);
+  background-position: center; }
+
+.img4 {
+  grid-area: img4;
+  background-image: url(../imagenes/cocinanueva.jpeg);
+  background-position: center; }
+
+@media only screen and (max-width: 768px) {
+  .grid1 {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(5, 150px);
+    gap: 5px;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-template-areas: "img3 img4 img4" "img3 img4 img4" "img3 logo img2" "img1 img1 img2" "img1 img1 img2"; } }
+
+@media only screen and (max-width: 500px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(7, 100px);
+    gap: 5px;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img2 img3" "img2 img3" "logo img5" "img4 img5"; } }
+
+
+
+
+        
+
+        .listaFlex{
+            display: flex;
+            padding: 10px;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+
+        }
+
+        .divFlex{
+            width: 600px;
+            margin: 10px;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 400ms linear;
+        }
+
+        .divFlex:hover{
+            width: 625px;
+            background-color: rgb(33, 30, 30);
+        
+        }
+
+        h4{
+            text-transform: uppercase;
+            font-size: 30px;
+            color: white;
+        }
+
+    
+        .icono{
+            color: white;
+        }
+
+        .pFlex{
+            color: gray;
+        }
+        
+        .contactoFlex{
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 150px;
+            
+        }
+
+        .imgFlex{
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .pContacto{
+            font-size: 30px;
+            height: 300px;
+            line-height: 250px;
+            
+        }
+
+        form {
+            color: gray;
+            background-color: black; 
+            margin-left: 30%;
+        }
+
+        .textF{
+            color: grey;
+            font-size: 30px;
+        }
+        .textoFormulario{
+            color: grey;
+            font-size: 30px;
+        }
+        
+        .footerFlex{
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+        
+        .iFooter{
+            height: 30px;
+            width: 30px;
+            color: blue;
+        }
+
+    
+          
